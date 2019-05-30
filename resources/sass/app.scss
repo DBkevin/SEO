@@ -1,8 +1,38 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+
 
 // Variables
 @import 'variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+.container-fluid{
+    max-width: $Max-width;
+}
+.centont{
+    margin-top: 50px;
+    margin-bottom:100px;
+}
+.nav{
+    background: $nav-bg;
+}
+
+.post_list{
+    background:$post-bg;
+    .cen{
+        border:$post_border;
+        background:#fff;
+        ul li{
+            border-bottom:1px solid #ccc;
+            margin:20px 0px ;
+        }
+    }
+    .mar-right{
+        margin-right:5px;
+    }
+    .mar-top{
+        margin-top:50px;
+    }
+   
+    
+}
