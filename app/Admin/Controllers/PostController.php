@@ -23,8 +23,8 @@ class PostController extends Controller
     public function index(Content $content)
     {
         return $content
-            ->header('Index')
-            ->description('description')
+            ->header('全部文章')
+            ->description('文章列表')
             ->body($this->grid());
     }
 
@@ -82,13 +82,11 @@ class PostController extends Controller
         $grid = new Grid(new Post);
 
         $grid->id('Id');
-        $grid->user_id('User id');
-        $grid->category_id('Category id');
-        $grid->title('Title');
-        $grid->slug('Slug');
-        $grid->description('Description');
-        $grid->meta_image('Meta image');
-        $grid->body('Body');
+        $grid->title('文章标题');
+        $grid->slug('友好标题');
+        $grid->description('文章描述');
+        $grid->meta_image('默认缩略图');
+        $grid->body('文章');
         $grid->view_count('View count');
         $grid->praise_count('Praise count');
         $grid->created_at('Created at');
