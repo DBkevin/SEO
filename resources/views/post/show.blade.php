@@ -7,7 +7,7 @@
                 {{$post->title}}
             </h2>
             <p class="text-left">
-                {{$post->body}}
+                {!! $post->body !!}
             </p>
         </div>
         <div class="col-md-4 cen">

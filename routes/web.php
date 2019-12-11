@@ -16,3 +16,5 @@ Route::get('/', function () {
 });
 Route::get('/posts','PostController@index');
 Route::get('/posts/{id}','PostController@show')->name('posts.show');
+Route::post('/uploadFile', 'ImagesController@uploadImg');
+Route::get('/admin/api/tags','TagsController@adminTags');

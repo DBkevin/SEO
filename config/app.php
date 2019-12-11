@@ -162,6 +162,8 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Overtrue\LaravelLang\TranslationServiceProvider::class,
+        Overtrue\LaravelUEditor\UEditorServiceProvider::class,
+        Overtrue\LaravelPinyin\ServiceProvider::class,
 
         /*
          * Package Service Providers...
