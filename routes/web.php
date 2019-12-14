@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('layouts.app');
-});
+Route::get('/','PostController@index');
 Route::get('/posts','PostController@index');
 Route::get('/posts/{id}','PostController@show')->name('posts.show');
 Route::post('/uploadFile', 'ImagesController@uploadImg');
